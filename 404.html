@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1d4a36">
+<title>העמוד לא נמצא · טייקון גן החיות</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: grid; place-items: center; background: radial-gradient(ellipse at 50% 30%, #2a6048, #16261c); font-family: 'Rubik', 'Arial Hebrew', system-ui, sans-serif; color: #2c2215; padding: 16px; box-sizing: border-box; }
+  .card { width: min(460px, 100%); background: #f4e8c8; border: 4px solid #7a4a24; border-radius: 22px; box-shadow: 0 20px 60px rgba(0,0,0,.5), inset 0 0 0 3px rgba(255,255,255,.6); padding: 26px 24px 28px; text-align: center; box-sizing: border-box; }
+  .big { font-size: 64px; line-height: 1; }
+  h1 { margin: 10px 0 6px; font-size: 28px; color: #1d4a36; }
+  p { margin: 0 0 18px; color: #7b6848; line-height: 1.5; }
+  a { display: inline-block; text-decoration: none; font-weight: 700; font-size: 18px; color: #3e2511; padding: 10px 22px; border: 3px solid #7a4a24; border-radius: 14px; background: linear-gradient(180deg, #ffc15e, #ff9f1c); box-shadow: 0 4px 0 #7a4a24; }
+  a:focus-visible { outline: 3px solid #1d4a36; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="big" aria-hidden="true">🦒</div>
+  <h1>העמוד הזה ברח מהמתחם</h1>
+  <p>לא מצאנו את מה שחיפשתם. אבל גן החיות פתוח — אפשר לחזור לשחק.</p>
+  <a id="home" href="/">🦁 לגן החיות</a>
+</main>
+<script>document.getElementById('home').href = (function () { var seg = location.pathname.split('/')[1]; return /\.github\.io$/.test(location.hostname) && seg ? '/' + seg + '/' : '/'; })();</script>
+</body>
+</html>
